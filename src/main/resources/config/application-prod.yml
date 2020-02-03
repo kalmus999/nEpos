@@ -32,12 +32,12 @@ spring:
     livereload:
       enabled: false
   datasource:
-    type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://localhost:3306/JGIG?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
-    username: root
-    password:
+    type: com.mysql.cj.jdbc.MysqlDataSource
+    url: jdbc:mysql://remotemysql.com:3306/ljx6B1Frhk
+    username: ljx6B1Frhk
+    password: AtxLNNtYeu
     hikari:
-      poolName: Hikari
+      poolName: mysql
       auto-commit: false
       data-source-properties:
         cachePrepStmts: true
